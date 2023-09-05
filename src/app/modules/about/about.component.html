@@ -1,0 +1,81 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+  <img
+    class="imageProfile"
+    src="../../../assets/images/ghabryel.jpg"
+    alt="Ghabryel Henrique"
+  />
+  <h1 class="mt-3">Ghabryel Henrique</h1>
+
+  <div
+    class="mt-3 d-flex flex-column justify-content-center"
+    style="text-align: center"
+  >
+    <p>
+      Meu nome é Ghabryel Henrique Ferreira e Almeida tenho 20 anos e sou de
+      Uberlândia/MG 👋.
+    </p>
+    <p>
+      Cursando 3º período de Sistemas de Informação na Faculdade Uniessa em
+      Uberlândia.
+    </p>
+  </div>
+
+  <h1 class="mt-5">Hard Skills</h1>
+  <div
+    class="hardSkills mt-5 d-grid gap-5 justify-content-center align-items-center"
+  >
+    <div *ngFor="let skill of hardSkills">
+      <h2>
+        {{ skill.language }}
+      </h2>
+
+      <div class="d-flex mt-2 flex-row justify-content-center">
+        <div *ngFor="let level of getLevel()">
+          <img
+            *ngIf="skill.level >= level"
+            class="skillsPoint"
+            src="../../../assets/svg/skillsPoint.svg"
+            alt="Skill Point"
+          />
+          <img
+            *ngIf="skill.level < level"
+            class="skillsPoint"
+            src="../../../assets/svg/skillNotPoint.svg"
+            alt="Skill Point"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="mt-5"   style="
+  margin-top: 6rem!important;
+">Soft Skills</h1>
+  <div
+  style="
+    margin-bottom: 7rem!important;
+"
+    class="hardSkills mt-5 d-grid gap-5 justify-content-center align-items-center"
+  >
+    <div *ngFor="let skill of softSkills">
+      <h2 >{{ skill.language }}</h2>
+
+      <div class="d-flex mt-2 flex-row justify-content-center">
+        <div *ngFor="let level of getLevel()">
+          <img
+            *ngIf="skill.level >= level"
+            class="skillsPoint"
+            src="../../../assets/svg/skillsPoint.svg"
+            alt="Skill Point"
+          />
+          <img
+            *ngIf="skill.level < level"
+            class="skillsPoint"
+            src="../../../assets/svg/skillNotPoint.svg"
+            alt="Skill Point"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

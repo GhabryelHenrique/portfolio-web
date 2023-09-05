@@ -1,0 +1,67 @@
+h1 {
+  font-weight: 900 !important;
+  font-size: 72px;
+}
+
+p {
+  color: #445964;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+span {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+button {
+  width: 280px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.images {
+  gap: 5%;
+}
+
+
+@media screen and (max-width: 992px){
+
+  h1 {
+    font-weight: 900 !important;
+    font-size: 54px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  .container{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-top: 1.5rem !important;
+    max-width: 100vw;
+  }
+
+  .homeContainer{
+    flex-direction: column;
+  }
+
+  .left{
+    min-height: 25rem;
+  }
+
+  .imageProgamador{
+    margin-bottom: 5%;
+  }
+}

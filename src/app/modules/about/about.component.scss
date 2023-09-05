@@ -1,0 +1,35 @@
+.imageProfile {
+  width: 183px;
+  border-radius: 50%;
+}
+
+.skillsPoint{
+  width: 36px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.hardSkills{
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+  .hardSkills{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .skillsPoint{
+    width: 28px;
+    height: 32px;
+  }
+
+  h2{
+    font-size: 24px;
+  }
+
+  h1{
+    font-size: 36px;
+  }
+}

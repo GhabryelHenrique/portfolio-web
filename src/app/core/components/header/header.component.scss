@@ -1,0 +1,69 @@
+h1 {
+  font-size: 36px;
+}
+
+a {
+  color: #445964;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Estilize o traço */
+.underline-effect {
+  position: relative;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px; /* Ajuste a altura do traço conforme necessário */
+  width: 100%;
+  height: 2px;
+  background-color: #445964; /* Cor do traço */
+  transform: scaleX(0); /* Começa com o traço invisível */
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Quando passar o mouse, o traço aparece */
+.underline-effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (min-width: 992px) {
+  .phoneNav{
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .headerContainer{
+    justify-content: space-between !important;
+  }
+
+  .container{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-top: 1.5rem !important;
+    max-width: 100vw;
+  }
+}
+
+
+::ng-deep .cdk-overlay-connected-position-bounding-box {
+  position: absolute !important;
+}
+
+::ng-deep .cdk-overlay-pane {
+  position: absolute !important;
+  background-color: #fff;
+  width: 100%;
+}

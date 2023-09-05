@@ -1,0 +1,69 @@
+<header
+  class="container d-flex flex-row pt-5 justify-content-between align-items-center headerContainer"
+>
+  <nav class="phoneNav navbar navbar-light light-blue lighten-4" >
+    <button
+    mat-icon-button [matMenuTriggerFor]="menu"
+    style="border-color: #fff;"
+      class="navbar-toggler toggler-example"
+      type="button"
+    >
+      <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
+    </button>
+
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <a class="nav-link underline-effect" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+        </button>
+        <button mat-menu-item class="nav-item">
+          <a class="nav-link underline-effect" [routerLink]="['/sobre']" routerLinkActive="router-link-active">Sobre</a>
+        </button>
+        <button mat-menu-item class="nav-item">
+          <a class="nav-link underline-effect" href="#">Portifólio</a>
+        </button>
+        <button class="nav-item" mat-menu-item>
+          <a class="nav-link underline-effect" href="#">Serviços</a>
+        </button>
+        <button mat-menu-item class="nav-item">
+          <a class="nav-link underline-effect" href="#">Resumo</a>
+        </button>
+        <button mat-menu-item class="nav-item">
+          <a class="nav-link underline-effect" href="#">Contato</a>
+        </button>
+    </mat-menu>
+  </nav>
+
+  <div class="logoName d-flex flex-row align-items-center">
+    <img
+      src="../../../../assets/svg/icon.svg"
+      alt="logo"
+      style="margin-right: 19px"
+    />
+    <h1>Ghabryel Henrique</h1>
+  </div>
+
+  <nav class="webNav navbar navbar-expand-lg">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link underline-effect" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-effect" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-effect" href="#">Portifólio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-effect" href="#">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-effect" href="#">Resumo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-effect" href="#">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

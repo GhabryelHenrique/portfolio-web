@@ -1,0 +1,12 @@
+.btn {
+  background: var(--dark-grey, #263138) !important;
+  border-color: #263138 !important;
+  &:hover {
+    background: var(--dark-grey, #263138) !important;
+    border-color: #263138 !important;
+  }
+  &:focus {
+    background: var(--dark-grey, #263138) !important;
+    border-color: #263138 !important;
+  }
+}
